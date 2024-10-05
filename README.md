@@ -33,57 +33,56 @@
 
 
 
-**## 🛠 기술 스택**
-Frontend: Vue.js 3, Vue Router
-State Management: Vuex, Pinia
-API: 경기도 버스노선조회 API
-CSS: SCSS, Pretendard Font
-Build Tool: Webpack
+## **🛠 기술 스택**
+* ** Frontend**: Vue.js 3, Vue Router
+* **State Management**: Vuex, Pinia
+* **API**: 경기도 버스노선조회 API
+* **CSS**: SCSS, P
+* **Build Tool**: Webpack  
 
-**## 📋 설치 및 실행**
-1. 프로젝트 클론
-bash
-코드 복사
+## **📋 설치 및 실행**
+### **1. 프로젝트 클론**
+```bash
 git clone https://github.com/your-repo/bus-miri.git
 cd bus-miri/frontend-osori
-2. 패키지 설치
-bash
-코드 복사
+```
+### **2. 패키지 설치**
+```bash
 npm install
-3. 개발 서버 실행
-bash
-코드 복사
+```
+### **3. 개발 서버 실행**
+```bash
 npm run serve
-개발 서버가 실행되면 http://localhost:8080에서 프로젝트를 확인할 수 있습니다.
+```
+개발 서버가 실행되면 `http://localhost:8080`에서 프로젝트를 확인할 수 있습니다.  
 
 ## **📊 API 사용**
 본 프로젝트는 경기도 버스 노선 조회 API를 사용합니다. API 호출 예시는 다음과 같습니다.
 
-javascript
-코드 복사
+```javascript
 import { getBusRouteList } from '@/utils/API/gyeonggiBusAPI.js'
 
 const busRoutes = await getBusRouteList('5000')
 console.log(busRoutes)
+```  
+## **🎨 스타일 가이드**
+* **코딩 스타일**: ESLint, Prettier 적용
+* **디자인**: 폰트를 사용하여 일관된 UX를 제공
+* **컴포넌트 구조**: 컴포넌트는 최대한 분리하고, 재사용성을 고려한 설계  
 
-**## 🎨 스타일 가이드**
-코딩 스타일: ESLint, Prettier 적용
-디자인: Pretendard 폰트를 사용하여 일관된 UX를 제공
-컴포넌트 구조: 컴포넌트는 최대한 분리하고, 재사용성을 고려한 설계
+## **📜 API 키 설정**
+API를 사용하려면 발급받은 서비스 키를 `gyeonggiBusAPI.js`에 추가해야 합니다.  
 
-**## 📜 API 키 설정**
-API를 사용하려면 발급받은 서비스 키를 gyeonggiBusAPI.js에 추가해야 합니다.
-
-javascript
-코드 복사
+```javascript
 const serviceKeyEncoded = '발급받은_인코딩된_API_키';
-
+```  
 ## **🐛 버그 및 기능 요청**
-버그나 기능 요청 사항이 있다면 Issues 탭을 통해 알려주세요!
+버그나 기능 요청 사항이 있다면 Issues 탭을 통해 알려주세요!  
 
 ## **📞 문의**
 궁금한 점이 있으시면 아래로 연락해 주세요:
+* 이메일: example@example.com
+* 깃허브: study2895<br><br>
 
-이메일: example@example.com
-깃허브: study2895
+***
 이 프로젝트를 통한 더 나은 대중교통 경험을 위해 기여해 주셔서 감사합니다! 😊
